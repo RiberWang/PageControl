@@ -106,8 +106,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat offsetX = scrollView.contentOffset.x;
-#warning 重要逻辑
-    /* pageControl的偏移量为pageControl的总宽度减去滑块的总宽度，
+#warning 重要逻辑 通过菜单的偏移量计算PageControl的偏移量
+    /*
+     pageControl的偏移量为pageControl的总宽度减去滑块的总宽度，
      同理scrollView的偏移量为scrollView的内容宽度减去scrollView的宽度。
      通过比例计算可得出pageControl的偏移量，
      即offsetX:scrollView可偏移的总距离=x:pageControl可偏移的总距离
