@@ -3,7 +3,7 @@
 
 ![仿淘宝首页菜单滑动效果](https://github.com/RiberWang/PageControl/blob/master/Source/scroll.gif?raw=true)
 
-# 重要逻辑：通过菜单的偏移量计算PageControl的偏移量
+## 重要逻辑：通过菜单的偏移量计算PageControl的偏移量
 
      pageControl的偏移量为pageControl的总宽度减去滑块的总宽度，
      同理scrollView的偏移量为scrollView的内容宽度减去scrollView的宽度。
