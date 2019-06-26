@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  MenuScrollDemo
+//
+//  Created by Riber on 26/6/2019.
+//  Copyright © 2019 Riber. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+#import "UIView+Category.h"
+
+#define KSCREENW [UIScreen mainScreen].bounds.size.width
+#define KSCREENH [UIScreen mainScreen].bounds.size.height
+#define KWidth(iphone6Width) ((iphone6Width)*KSCREENW/375)
+#define KHeight(iphone6Height) ((iphone6Height)*KSCREENH/667)
+// 颜色
+#define rgba(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define rgb(r, g, b)  rgba(r, g, b, 1.0f)
+
+
+#endif /* PrefixHeader_pch */
