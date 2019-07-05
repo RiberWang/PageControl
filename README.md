@@ -1,7 +1,7 @@
 # PageControl
-仿淘宝首页菜单滑动效果
+仿天猫淘宝首页菜单滑动效果
 
-![仿淘宝首页菜单滑动效果](https://github.com/RiberWang/PageControl/blob/master/Source/scroll.gif?raw=true)
+![仿天猫淘宝首页菜单滑动效果](https://github.com/RiberWang/PageControl/blob/master/Source/scroll.gif?raw=true)
 
 ## 重要逻辑：通过菜单的偏移量计算PageControl的偏移量
 
