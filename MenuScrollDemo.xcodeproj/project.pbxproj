@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07516F102341FD220039E8A1 /* RBMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07516F0F2341FD220039E8A1 /* RBMenuCell.m */; };
+		078BABE52341F794007B0B00 /* RBGiftCVFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 078BABE32341F793007B0B00 /* RBGiftCVFlowLayout.m */; };
 		07D18D3E22C2F314008DBE76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D18D3D22C2F314008DBE76 /* AppDelegate.m */; };
 		07D18D4122C2F314008DBE76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D18D4022C2F314008DBE76 /* ViewController.m */; };
 		07D18D4422C2F314008DBE76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D18D4222C2F314008DBE76 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07516F0E2341FD220039E8A1 /* RBMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMenuCell.h; sourceTree = "<group>"; };
+		07516F0F2341FD220039E8A1 /* RBMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMenuCell.m; sourceTree = "<group>"; };
+		078BABE32341F793007B0B00 /* RBGiftCVFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBGiftCVFlowLayout.m; sourceTree = "<group>"; };
+		078BABE42341F794007B0B00 /* RBGiftCVFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBGiftCVFlowLayout.h; sourceTree = "<group>"; };
 		07D18D3922C2F314008DBE76 /* MenuScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D18D3C22C2F314008DBE76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07D18D3D22C2F314008DBE76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,8 +137,12 @@
 				07D18D3D22C2F314008DBE76 /* AppDelegate.m */,
 				07D18D3F22C2F314008DBE76 /* ViewController.h */,
 				07D18D4022C2F314008DBE76 /* ViewController.m */,
+				07516F0E2341FD220039E8A1 /* RBMenuCell.h */,
+				07516F0F2341FD220039E8A1 /* RBMenuCell.m */,
 				07D18D6322C30112008DBE76 /* RBMenuCVCell.h */,
 				07D18D6422C30112008DBE76 /* RBMenuCVCell.m */,
+				078BABE42341F794007B0B00 /* RBGiftCVFlowLayout.h */,
+				078BABE32341F793007B0B00 /* RBGiftCVFlowLayout.m */,
 				07D18D6022C2F659008DBE76 /* RBPageControlView.h */,
 				07D18D6122C2F659008DBE76 /* RBPageControlView.m */,
 				07D18DB822C3111D008DBE76 /* UIView+Category.h */,
@@ -296,11 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078BABE52341F794007B0B00 /* RBGiftCVFlowLayout.m in Sources */,
 				07D18D4122C2F314008DBE76 /* ViewController.m in Sources */,
 				07D18D6522C30112008DBE76 /* RBMenuCVCell.m in Sources */,
 				07D18DAD22C30415008DBE76 /* MASLayoutConstraint.m in Sources */,
 				07D18D4C22C2F316008DBE76 /* main.m in Sources */,
 				07D18D3E22C2F314008DBE76 /* AppDelegate.m in Sources */,
+				07516F102341FD220039E8A1 /* RBMenuCell.m in Sources */,
 				07D18DB222C30415008DBE76 /* MASViewAttribute.m in Sources */,
 				07D18DAE22C30415008DBE76 /* NSArray+MASAdditions.m in Sources */,
 				07D18DAB22C30415008DBE76 /* MASCompositeConstraint.m in Sources */,
@@ -469,7 +481,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QT6N4WM82E;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/MenuScrollDemo/PrefixHeader.pch;
@@ -481,6 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zht.MenuScrollDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = common_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
@@ -490,7 +504,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QT6N4WM82E;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/MenuScrollDemo/PrefixHeader.pch;
@@ -502,6 +517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zht.MenuScrollDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = common_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
